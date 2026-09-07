@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;700&display=swap');
+
+
+/* ESTILOS GENERALES */
+
+body,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+h1,
+h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+/* HEADER */
+
+header {
+    background-color: #ffffff;
+    border-bottom: solid black 0.2em;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.5em;
+    color: #1c565c;
+}
+
+p em strong{
+    color: #1c565c;
+}
+
+/* NAV */
+
+.navbar {
+    background-color: #1c565c;
+    border-top: solid black 0.2em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-links li {
+    width: 100%;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 1em 0;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.nav-links a:hover {
+    background-color: #555555;
+}
+
+
+/* PRESENTACIÓN */
+
+#presentacion {
+    margin: 2em 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: solid #1c565c 0.15em;
+}
+
+#presentacion h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #1c565c;
+}
+
+#presentacion p {
+    line-height: 1.5;
+}
+
+
+/* ACCESO A CAMISETAS */
+
+#acceso-camisetas {
+    margin: 2em 1.5em;
+    text-align: center;
+}
+
+#acceso-camisetas h2 {
+    font-size: 3em;
+    color: #1c565c;
+}
+
+#acceso-camisetas p {
+    line-height: 1.5;
+}
+
+
+/* BOTÓN */
+
+.btn-vermas {
+    display: block;
+    width: 50%;
+    padding: 0.9em;
+    margin: 2em auto;
+    background-color: #1c565c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.btn-vermas:hover {
+    background-color: #555555;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+/* CLUBES DEL INICIO */
+
+#clubes {
+    margin: 2em 1.5em;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+#clubes h2 {
+    font-size: 2em;
+    color: #1c565c;
+}
+
+.escudos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.escudos a {
+    width: 20%;
+}
+
+.escudos img {
+    width: 100%;
+    height: auto;
+}
+
+.escudos img:hover {
+    transform: translateY(-3px);
+}
+
+/* -------------------- CAMISETAS -------------------- */
+
+
+/* INTRODUCCIÓN */
+
+#intro-camisetas {
+    margin: 2em 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: solid #1d1d1d 0.15em;
+}
+
+#intro-camisetas h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #1c565c;
+}
+
+#intro-camisetas p {
+    line-height: 1.5;
+}
+
+
+/* BLOQUE DE CADA CAMISETA */
+
+.camiseta {
+    width: 90%;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    border: solid #1d1d1d 0.15em;
+    font-size: 1.2em;
+}
+
+.camiseta h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #1d1d1d;
+}
+
+
+/* FOTOS FRENTE Y REVERSO */
+
+.fotos-camiseta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.fotos-camiseta div {
+    width: 100%;
+    text-align: center;
+}
+
+.fotos-camiseta h3 {
+    text-align: center;
+    color: #1c565c;
+}
+
+.fotos-camiseta img {
+    width: 90%;
+    height: auto;
+    border-radius: 0.5em;
+    border: solid #1d1d1d 0.15em;
+}
+
+
+/* HISTORIA */
+
+.historia-camiseta {
+    margin: 1.5em;
+    padding-top: 1em;
+    border-top: solid #1c565c 0.15em;
+}
+
+.historia-camiseta h3 {
+    text-align: center;
+}
+
+.historia-camiseta p {
+    line-height: 1.5;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+
+    header h1 {
+        font-size: 5em;
+        padding: 0.4em;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        width: 15%;
+    }
+
+    .nav-links a {
+        padding: 1.2em;
+    }
+
+    #presentacion {
+        width: 70%;
+        margin: 3em auto;
+    }
+
+    #presentacion h2 {
+        font-size: 2.5em;
+    }
+
+    #acceso-camisetas {
+        width: 70%;
+        margin: 3em auto;
+    }
+
+    #acceso-camisetas h2 {
+        font-size: 2.5em;
+    }
+
+    .btn-vermas {
+        width: 20%;
+    }
+
+    /* DESKTOP CAMISETAS */
+
+     #intro-camisetas {
+        width: 70%;
+        margin: 3em auto;
+    }
+
+    #intro-camisetas h2 {
+        font-size: 2.5em;
+    }
+
+    .camiseta {
+        width: 80%;
+        margin: 3em auto;
+        padding: 2em;
+    }
+
+    .camiseta h2 {
+        font-size: 2.5em;
+    }
+
+    .fotos-camiseta {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .fotos-camiseta div {
+        width: 45%;
+    }
+
+    .fotos-camiseta img {
+        width: 100%;
+    }
+
+    .historia-camiseta {
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    /* CLUBES - DESKTOP */
+    #clubes {
+        width: 70%;
+        margin: 3em auto;
+    }
+
+    #clubes h2 {
+        font-size: 2.5em;
+    }
+
+    .escudos {
+        gap: 2em;
+    }
+
+    .escudos a {
+        width: 12%;
+    }
+
+}
+
